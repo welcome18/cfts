@@ -75,8 +75,8 @@
               "\n",
               [
                 "#!/bin/bash \n",
-				"sudo apt-get install wget \n",
-				"sudo wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add - \n",
+                "sudo apt-get install wget \n",
+                "sudo wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add - \n",
                 "sudo echo deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/renci-irods.list \n",
                 "sudo apt-get update \n",
 				"cd /home/ubuntu \n",
@@ -87,8 +87,6 @@
 				"sudo apt-get install irods-server irods-database-plugin-postgres \n",
 				"sudo python /var/lib/irods/scripts/setup_irods.py \n",
 				"sudo git clone https://github.com/irods/irods.git \n",
-				"chmod 777 psql.sh \n",
-				"./psql.sh \n",
 				"exit"
               ]
             ]
