@@ -87,11 +87,7 @@
 				"sudo apt-get install irods-server irods-database-plugin-postgres \n",
 				"sudo python /var/lib/irods/scripts/setup_irods.py \n",
 				"sudo git clone https://github.com/irods/irods.git \n",
-				"sudo git clone https://github.com/PrudhviChanda/Icatserver.git \n",
-				"cd Icatserver \n",
-				"chmod 777 mysql.sh psql.sh \n",
-				"./mysql.sh \n",
-				"exit \n",
+				"chmod 777 psql.sh \n",
 				"./psql.sh \n",
 				"exit"
               ]
